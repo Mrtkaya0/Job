@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  min-height: 100vh;
+  font-family: "Poppins";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+header h2 {
+  color: rgb(216, 181, 26);
+  font-size: 40px;
+}
+header h2 span {
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+}
+header nav {
+  display: flex;
+  gap: 30px;
+}
+header nav a {
+  text-decoration: none;
+  color: rgb(216, 181, 26);
+}
+header nav .active {
+  text-shadow: 0 0 20px rgb(255, 251, 0);
+  border-bottom: 1px solid rgb(216, 181, 26);
+}
+
+.list-page {
+  padding: 20px;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 50px;
+  margin: 25px;
+}
+
+.card {
+  background: gray;
+  border-radius: 10px;
+  padding: 20px;
+}
+.card .top-area {
+  display: flex;
+  justify-content: space-between;
+}
+.card .head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+.card .head .letter {
+  background: rgb(216, 181, 26);
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  font-size: 30px;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.card .head .info {
+  font-size: 20px;
+}
+.card .body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+}
+.card .body .field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card .status {
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.card .status p {
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.button {
+  color: white;
+  background-color: #222;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.button svg {
+  display: inline;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.75rem;
+  color: white;
+}
+
+.button:focus svg {
+  animation: spin_357 0.5s linear;
+}
+
+@keyframes spin_357 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */
